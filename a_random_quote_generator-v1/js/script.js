@@ -36,7 +36,7 @@ function printQuote() {
   var randomQuote= getRandomQuote();
   var messageQuote= '';
    messageQuote += '<p class="quote">'+ randomQuote.quote + '</p>';
-   messageQuote += '<p class="source">'+ randomQuote.source + '</p>';
+   messageQuote += '<p class="source">'+ randomQuote.source;
  
    //If Conditional statement
   if(randomQuote.citation) {
@@ -44,7 +44,7 @@ messageQuote += '<span class="citation">' + randomQuote.citation + '</span>';
  }
 
  if(randomQuote.year) {
-messageQuote += '<span class="year">' + randomQuote.year + '</span>';
+messageQuote += '<span class="year">' + randomQuote.year + '</span></p>';
  }
 
  document.getElementById('quote-box').innerHTML = messageQuote;
