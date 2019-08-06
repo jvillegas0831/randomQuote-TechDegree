@@ -43,8 +43,9 @@ messageQuote += '<span class="citation">' + randomQuote.citation + '</span>';
  }
 
  if(randomQuote.year) {
-messageQuote += '<span class="year">' + randomQuote.year + '</span></p>';
+messageQuote += '<span class="year">' + randomQuote.year + '</span>';
  }
+  messageQuote += '</p>';
 
  document.getElementById('quote-box').innerHTML = messageQuote;
 }
